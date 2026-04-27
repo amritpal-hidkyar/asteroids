@@ -7,6 +7,7 @@ from asteroid import Asteroid
 from shot import Shot
 from circleshape import CircleShape
 import sys
+import menu
 
 def main():
     pygame.init()
@@ -28,6 +29,8 @@ def main():
 
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     asteroidfield = AsteroidField()
+
+    menu.show_menu(screen)
 
     while True:
         log_state()
