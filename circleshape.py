@@ -1,5 +1,6 @@
 import pygame 
 from constants import *
+import math
 
 # Base class for game objects
 class CircleShape(pygame.sprite.Sprite):
@@ -16,8 +17,9 @@ class CircleShape(pygame.sprite.Sprite):
 
 
     def draw(self, screen):
-        pygame.draw.circle(screen, "white", self.position, self.radius, LINE_WIDTH)
+     #  pygame.draw.circle(screen, "white", self.position, self.radius, LINE_WIDTH)
+        pass
 
     def update(self, dt):
-        self.position += self.velocity * dt
-
+    #   self.position += self.velocity * dt
+        pass
